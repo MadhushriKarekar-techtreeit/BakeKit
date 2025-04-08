@@ -172,6 +172,7 @@
 
 .card-body .card-link {
   font-size: 1.25rem;
+  font-weight: 600;
   text-transform: none;
   fill: #333333;
   color: #333333;
@@ -182,8 +183,12 @@
   text-decoration: none;
   margin: 3rem 0;
   display: block;
+  transition: all 0.4s ease;
+  font-family: "Elsie", Sans-serif;
 }
-
+.card-body .card-link:hover {
+  color: #ef633e;
+}
 .card-delivery {
   margin-top: 8rem;
 }
