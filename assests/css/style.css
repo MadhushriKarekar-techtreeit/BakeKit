@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+.navbar-brand {
+  color: #333333;
+  font-family: "Elsie", Sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  padding-left: 1rem;
+}
+.navbar-toggler {
+  border: none;
+}
+.nav-link {
+  padding-left: 1rem;
+}
+
+.nav {
+  width: 68%;
+}
+.nav ul {
+  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.hero-section {
+  margin: 4rem 0;
+}
+.hero-section .image {
+  border-radius: 50px 24px 24px 24px;
+  overflow: hidden;
+  width: 500px;
+}
+.hero-section .image img {
+  width: 100%;
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-section .text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero-section .text .name {
+  margin-bottom: 1rem;
+  color: #ef633e;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.hero-section .text .title {
+  color: #333333;
+  font-family: "Elsie", Sans-serif;
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 1em;
+}
+.hero-section .text .description {
+  color: #54595f;
+  font-size: 1.25rem;
+  line-height: 1.6em;
+  width: 80%;
+}
+.btn,
+.nav-btn {
+  font-family: "Elsie", Sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  fill: #ffffff;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #96e4dd;
+  border-radius: 12px 12px 12px 12px;
+  padding: 18px 25px 15px 19px;
+  transition: all 0.4s ease;
+}
+.nav-btn {
+  background-color: transparent;
+  color: #96e4dd;
+  border-color: #96e4dd;
+}
+.nav-btn:hover {
+  background-color: #96e4dd;
+  color: #fff;
+}
+.hero-btn {
+  width: 25%;
+  background-color: #96e4dd;
+  color: #fff;
+}
+.hero-btn:hover {
+  border: 1px solid #96e4dd;
+  color: #96e4dd;
+}
+.feature-section {
+  margin: 10rem 0;
+}
+.feature-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.feature-text {
+  justify-items: center;
+}
+.feature-name {
+  margin-bottom: 0.3rem;
+  color: #ef633e;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.feature-title {
+  color: #333333;
+  font-family: "Elsie", Sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1em;
+  margin-bottom: 1rem;
+}
+.feature-section .description {
+  text-align: center;
+  color: #54595f;
+  font-size: 1.5rem;
+  line-height: 1.6em;
+  width: 80%;
+}
+
+.card {
+  border-radius: 100px 24px 24px 24px;
+  background-color: #fff;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.08);
+  border: none;
+  align-items: center;
+}
+.card-image {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+.card-image img {
+  position: absolute;
+  top: -1.25rem;
+}
+.card-body {
+  justify-items: center;
+}
+
+.card-body .card-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 1em;
+  color: #333333;
+  font-family: "Elsie", Sans-serif;
+}
+
+.card-body .card-text {
+  text-align: center;
+  font-size: 1.15rem;
+  color: #54595f;
+  margin-top: 2rem;
+}
+
+.card-body .card-link {
+  font-size: 1.25rem;
+  text-transform: none;
+  fill: #333333;
+  color: #333333;
+  background-color: rgba(2, 1, 1, 0);
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-color: rgba(2, 1, 1, 0);
+  text-decoration: none;
+  margin: 3rem 0;
+  display: block;
+}
+
+.card-delivery {
+  margin-top: 8rem;
+}
+.count-section {
+  margin-bottom: 2rem;
+}
+.count-year-content .year {
+  font-family: "Elsie", Sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #54595f;
+  line-height: 2.6rem;
+}
+.count-year-content .desc {
+  color: #ef633e;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.6em;
+}
+.count-card .count-desc {
+  color: #3333339c;
+  padding: 1.75rem;
+  text-align: center;
+}
+
+/* Breakpoints */
+@media only screen and (max-width: 768px) {
+  .nav {
+    width: 80%;
+  }
+  .hero-section {
+    margin: 2rem 0;
+  }
+  .hero-btn {
+    width: 30%;
+  }
+  .feature-section {
+    margin: 4rem 0;
+  }
+  .features-card {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .nav-btn {
+    display: none;
+  }
+
+  .nav ul {
+    flex-wrap: wrap;
+  }
+
+  .hero-section {
+    margin: 2rem 0;
+  }
+  .hero-container {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .navbar-expand-lg .navbar-nav {
+    flex-wrap: wrap;
+  }
+  .hero-container {
+    flex-wrap: wrap-reverse;
+    gap: 2rem;
+  }
+  .hero-section .text {
+    align-items: center;
+  }
+
+  .hero-section .text .description {
+    width: 100%;
+    text-align: center;
+  }
+}
