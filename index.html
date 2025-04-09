@@ -15,11 +15,20 @@
 
     <!-- CSS File -->
     <link rel="stylesheet" href="./assests/css/style.css" />
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid nav">
+        <div class="nav container">
           <div class="navbar-brand-name">
             <a class="navbar-brand" href="#">BakeKit</a>
           </div>
@@ -63,7 +72,7 @@
 
     <main>
       <!-- hero section -->
-      <section class="hero-section">
+      <section class="hero-section section">
         <div class="container">
           <div class="hero-container">
             <div class="text">
@@ -76,7 +85,9 @@
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </div>
-              <button class="hero-btn btn">OUR SHOP</button>
+              <div>
+                <button class="hero-btn btn">OUR SHOP</button>
+              </div>
             </div>
             <div class="image">
               <img
@@ -92,7 +103,7 @@
       <!-- features section -->
       <section class="feature-section">
         <div class="feature-container container">
-          <div class="feature-text">
+          <div class="feature-text mt-5">
             <div class="feature-name">JS Bakery</div>
             <div class="feature-title">Features</div>
             <div class="description">
@@ -100,61 +111,67 @@
               industry.
             </div>
           </div>
-          <div
-            class="features-card d-flex justify-content-center gap-4 align-items-start"
-          >
-            <div class="card mt-5">
-              <div class="card-image">
-                <img
-                  src="./assests/img/fresh-food-icon.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </div>
+          <div class="features-card row mb-5">
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+              <div class="card mt-5">
+                <div class="card-image">
+                  <img
+                    src="./assests/img/fresh-food-icon.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
 
-              <div class="card-body">
-                <h5 class="card-title">Fresh Food</h5>
-                <p class="card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry
-                </p>
-                <a href="#" class="card-link">Explore</a>
+                <div class="card-body">
+                  <h5 class="card-title">Fresh Food</h5>
+                  <p class="card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry
+                  </p>
+                  <a href="#" class="card-link">Explore</a>
+                </div>
               </div>
             </div>
-            <div class="card card-delivery">
-              <div class="card-image">
-                <img
-                  src="./assests/img/delivery-icon.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </div>
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+              <div class="card card-delivery">
+                <div class="card-image">
+                  <img
+                    src="./assests/img/delivery-icon.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
 
-              <div class="card-body">
-                <h5 class="card-title">Delivery</h5>
-                <p class="card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry
-                </p>
-                <a href="#" class="card-link">Explore</a>
+                <div class="card-body">
+                  <h5 class="card-title">Delivery</h5>
+                  <p class="card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry
+                  </p>
+                  <a href="#" class="card-link">Explore</a>
+                </div>
               </div>
             </div>
-            <div class="card mt-5">
-              <div class="card-image">
-                <img
-                  src="./assests/img/restaurant-icon.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </div>
+            <div
+              class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 d-flex justify-content-center"
+            >
+              <div class="card mt-5">
+                <div class="card-image">
+                  <img
+                    src="./assests/img/restaurant-icon.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
 
-              <div class="card-body">
-                <h5 class="card-title">Restaurant</h5>
-                <p class="card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry
-                </p>
-                <a href="#" class="card-link">Explore</a>
+                <div class="card-body">
+                  <h5 class="card-title">Restaurant</h5>
+                  <p class="card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry
+                  </p>
+                  <a href="#" class="card-link">Explore</a>
+                </div>
               </div>
             </div>
           </div>
@@ -162,7 +179,7 @@
       </section>
       <!-- features section -->
 
-      <section class="count-section">
+      <section class="count-section section">
         <div class="count-container container">
           <div class="count-cards row text-center">
             <div class="count-card col-lg-3 col-md-3 col-sm-6">
@@ -199,6 +216,173 @@
               </div>
               <div class="count-desc">
                 Lorem Ipsum is simply dummy text of the printing.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container pt-5 pb-5">
+          <div class="row gap-5 pt-5">
+            <div class="col-lg-5 col-md-5 mt-5">
+              <div class="image">
+                <img
+                  src="./assests/img/P43H8BA-qli2rq35yoi50zm6bm8mk9u32kflmz119a8swzy2xa.jpg"
+                  alt="image"
+                  class="image-fuild rounded-5"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="text pt-5 pb-6 d-flex flex-column">
+                <div class="name">About us</div>
+                <div class="title">
+                  Most Loved <br />
+                  Bakery in city
+                </div>
+                <div class="title-desc">
+                  <p>Lorem Ipsum is simply dummy text .</p>
+                </div>
+                <div class="description">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry’s
+                  standard dummy text ever.
+                </div>
+                <div>
+                  <button class="about-btn nav-btn btn mt-4">ABOUT US</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu">
+        <div class="menu-container">
+          <div class="container">
+            <div class="menu-text mt-5">
+              <div class="menu-name">Our Menu</div>
+              <div class="menu-title">Favorite Food</div>
+              <div class="description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </div>
+            </div>
+            <div
+              class="menu-card gap-5 mt-5 row mb-5 d-flex justify-content-center"
+            >
+              <div class="col-lg-3 col-md-6">
+                <div class="card mt-5">
+                  <div class="card-image">
+                    <img
+                      src="./assests/img/cake1.jpg"
+                      class="menu-img"
+                      alt="..."
+                    />
+                  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">Special Product 1</h5>
+                    <div class="rating d-flex justify-content-start">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price">$9</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card mt-5">
+                  <div class="card-image">
+                    <img
+                      src="./assests/img/cake2.jpg"
+                      class="menu-img"
+                      alt="..."
+                    />
+                  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">Special Product 2</h5>
+                    <div class="rating d-flex justify-content-start">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="price">$7</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card mt-5">
+                  <div class="card-image">
+                    <img
+                      src="./assests/img/cake-3.jpg"
+                      class="menu-img"
+                      alt="..."
+                    />
+                  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">Special Product 3</h5>
+                    <div class="rating d-flex justify-content-start">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="price">$5</div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center mt-5">
+                <button class="about-btn nav-btn btn mt-4">OUR SHOP</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="category">
+        <div class="container mt-5 mb-5">
+          <div class="title">Explore by category</div>
+          <div class="row mt-5 d-flex justify-content-center">
+            <div class="col-lg-2 col-md-4 d-flex justify-content-center mb-5">
+              <div class="card" id="fruits-card">
+                <div class="image">
+                  <img src="./assests/img/fruits-icon-resize.png" alt="" />
+                </div>
+                <div class="name mt-3 mb-3"><a href="#">Fruits</a></div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 d-flex justify-content-center mb-5">
+              <div class="card" id="dinner-card">
+                <div class="image">
+                  <img src="./assests/img/dinner-icon-resize.png" alt="" />
+                </div>
+                <div class="name mt-3 mb-3"><a href="#">Dinner</a></div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 d-flex justify-content-center mb-5">
+              <div class="card" id="bakery-card">
+                <div class="image">
+                  <img src="./assests/img/bakery-icon-resize.png" alt="" />
+                </div>
+                <div class="name mt-3 mb-3"><a href="#">Bakery</a></div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 d-flex justify-content-center mb-5">
+              <div class="card" id="drinks-card">
+                <div class="image">
+                  <img src="./assests/img/drinks-icon-resize.png" alt="" />
+                </div>
+                <div class="name mt-3 mb-3"><a href="#">Drinks</a></div>
               </div>
             </div>
           </div>

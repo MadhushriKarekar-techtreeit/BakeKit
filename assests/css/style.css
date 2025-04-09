@@ -4,9 +4,24 @@
   padding: 0;
   box-sizing: 0;
 }
+:root {
+  --font-family: "Elsie", Sans-serif;
+  --white-color: #fff;
+  --dark-color: #333333;
+  --accent-color: #ef633e;
+  --main-color: #96e4dd;
+  --light-color: #54595f;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.section {
+  margin: 10rem 0;
+}
 .navbar-brand {
-  color: #333333;
-  font-family: "Elsie", Sans-serif;
+  color: var(--dark-color);
+  font-family: var(--font-family);
   font-size: 40px;
   font-weight: 900;
   padding-left: 1rem;
@@ -18,22 +33,17 @@
   padding-left: 1rem;
 }
 
-.nav {
-  width: 68%;
-}
 .nav ul {
   gap: 2rem;
   display: flex;
   justify-content: center;
   width: 100%;
 }
-.hero-section {
-  margin: 4rem 0;
-}
+
 .hero-section .image {
   border-radius: 50px 24px 24px 24px;
   overflow: hidden;
-  width: 500px;
+  width: 400px;
 }
 .hero-section .image img {
   width: 100%;
@@ -47,35 +57,39 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width: 50%;
 }
 
-.hero-section .text .name {
+.hero-section .text .name,
+.about .text .name {
   margin-bottom: 1rem;
-  color: #ef633e;
+  color: var(--accent-color);
   font-size: 1.2rem;
   font-weight: 700;
 }
 
-.hero-section .text .title {
-  color: #333333;
-  font-family: "Elsie", Sans-serif;
+.hero-section .text .title,
+.about .text .title {
+  color: var(--dark-color);
+  font-family: var(--font-family);
   font-size: 4.5rem;
   font-weight: 900;
   line-height: 1em;
 }
+
 .hero-section .text .description {
-  color: #54595f;
+  color: var(--light-color);
   font-size: 1.25rem;
   line-height: 1.6em;
-  width: 80%;
+  padding-right: 4rem;
 }
 .btn,
 .nav-btn {
-  font-family: "Elsie", Sans-serif;
+  font-family: var(--font-family);
   font-size: 1rem;
   font-weight: 800;
   text-transform: uppercase;
-  fill: #ffffff;
+  fill: var(--white-color);
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   border-color: #96e4dd;
@@ -85,51 +99,54 @@
 }
 .nav-btn {
   background-color: transparent;
-  color: #96e4dd;
-  border-color: #96e4dd;
+  color: var(--main-color);
+  border-color: var(--main-color);
 }
-.nav-btn:hover {
-  background-color: #96e4dd;
-  color: #fff;
+.nav-btn:hover,
+.about-btn:hover {
+  background-color: var(--main-color);
+  color: var(--white-color);
 }
 .hero-btn {
-  width: 25%;
-  background-color: #96e4dd;
-  color: #fff;
+  background-color: var(--main-color);
+  color: var(--white-color);
 }
 .hero-btn:hover {
-  border: 1px solid #96e4dd;
-  color: #96e4dd;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
 }
-.feature-section {
-  margin: 10rem 0;
-}
-.feature-container {
+
+.feature-container,
+.menu-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.feature-text {
+.feature-text,
+.menu-text {
   justify-items: center;
 }
-.feature-name {
+.feature-name,
+.menu-name {
   margin-bottom: 0.3rem;
-  color: #ef633e;
+  color: var(--accent-color);
   font-size: 1.25rem;
   font-weight: 700;
 }
 
-.feature-title {
-  color: #333333;
-  font-family: "Elsie", Sans-serif;
+.feature-title,
+.menu-title {
+  color: var(--dark-color);
+  font-family: var(--font-family);
   font-size: 3.5rem;
   font-weight: 900;
   line-height: 1em;
   margin-bottom: 1rem;
 }
-.feature-section .description {
+.feature-section .description,
+.menu-section .description {
   text-align: center;
-  color: #54595f;
+  color: var(--light-color);
   font-size: 1.5rem;
   line-height: 1.6em;
   width: 80%;
@@ -137,7 +154,7 @@
 
 .card {
   border-radius: 100px 24px 24px 24px;
-  background-color: #fff;
+  background-color: var(--white-color);
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.08);
   border: none;
   align-items: center;
@@ -151,7 +168,7 @@
   position: absolute;
   top: -1.25rem;
 }
-.card-body {
+.feature-section .card-body {
   justify-items: center;
 }
 
@@ -159,14 +176,14 @@
   font-size: 1.5rem;
   font-weight: 900;
   line-height: 1em;
-  color: #333333;
-  font-family: "Elsie", Sans-serif;
+  color: var(--dark-color);
+  font-family: var(--font-family);
 }
 
 .card-body .card-text {
   text-align: center;
   font-size: 1.15rem;
-  color: #54595f;
+  color: var(--light-color);
   margin-top: 2rem;
 }
 
@@ -174,8 +191,8 @@
   font-size: 1.25rem;
   font-weight: 600;
   text-transform: none;
-  fill: #333333;
-  color: #333333;
+  fill: var(--dark-color);
+  color: var(--dark-color);
   background-color: rgba(2, 1, 1, 0);
   border-style: solid;
   border-width: 0px 0px 0px 0px;
@@ -184,10 +201,10 @@
   margin: 3rem 0;
   display: block;
   transition: all 0.4s ease;
-  font-family: "Elsie", Sans-serif;
+  font-family: var(--font-family);
 }
 .card-body .card-link:hover {
-  color: #ef633e;
+  color: var(--accent-color);
 }
 .card-delivery {
   margin-top: 8rem;
@@ -196,14 +213,14 @@
   margin-bottom: 2rem;
 }
 .count-year-content .year {
-  font-family: "Elsie", Sans-serif;
+  font-family: var(--font-family);
   font-size: 3.5rem;
   font-weight: 900;
-  color: #54595f;
+  color: var(--light-color);
   line-height: 2.6rem;
 }
 .count-year-content .desc {
-  color: #ef633e;
+  color: var(--accent-color);
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.6em;
@@ -213,20 +230,127 @@
   padding: 1.75rem;
   text-align: center;
 }
+.about {
+  background-image: url(/assests/img/gallery-sec-img.jpg);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+.about .text .title {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+.about .text .title-desc {
+  font-size: 1.25rem;
+  color: var(--light-color);
+}
+.about .text .description {
+  color: #7a7a7a;
+  font-size: 20px;
+  font-size: 1rem;
+  padding-right: 5rem;
+}
+.about .image img {
+  width: 100%;
+}
 
+.menu {
+  background-image: url(/assests/img/our-menu-bg.jpg);
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.menu-container {
+  padding: 173px 20px 150px 20px;
+}
+
+.menu .rating {
+  margin: 1.25rem 0;
+  color: var(--main-color);
+}
+.menu .card {
+  border-radius: 0;
+  align-items: flex-start;
+  border-radius: 100px 24px 24px 24px;
+  position: relative;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+.menu .card:hover {
+  transform: scale(1.1);
+}
+
+.menu .card .card-image {
+  width: 320px;
+  height: 355px;
+  position: relative;
+}
+.menu .card .card-image img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -30px;
+  right: 30px;
+  border-radius: 100px 24px 24px 24px;
+}
+
+.menu .card .card-body .price {
+  height: 75px;
+  width: 75px;
+  padding: 20px 20px 20px 20px;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #e4fffc 0%, #c5fff8 100%);
+  border-radius: 50px 50px 50px 50px;
+  font-size: 24px;
+  font-weight: 900;
+  font-family: var(--font-family);
+  position: absolute;
+  right: 10px;
+  bottom: -40px;
+}
+
+.category .title {
+  text-align: center;
+  color: #54595f;
+  font-size: 20px;
+  line-height: 1.6em;
+}
+
+.category .card {
+  border-radius: 50px 24px 24px 24px;
+  padding: 1rem;
+}
+.category .image {
+  position: relative;
+}
+.category .image img {
+  margin: -2.75rem 0 0 0;
+}
+.category .card .name a {
+  text-decoration: none;
+  color: #333333;
+  text-transform: capitalize;
+}
+#fruits-card {
+  background-color: #ffdfd6;
+}
+#dinner-card {
+  background-color: #c8fff8;
+}
+#bakery-card {
+  background-color: #fff1d8;
+}
+#drinks-card {
+  background-color: #ffded6;
+}
 /* Breakpoints */
+@media screen and (min-width: 576px) {
+}
+
 @media only screen and (max-width: 768px) {
-  .nav {
-    width: 80%;
-  }
   .hero-section {
     margin: 2rem 0;
-  }
-  .hero-btn {
-    width: 30%;
-  }
-  .feature-section {
-    margin: 4rem 0;
   }
   .features-card {
     flex-wrap: wrap;
@@ -240,16 +364,19 @@
   .nav-btn {
     display: none;
   }
+  .about-btn {
+    display: block;
+  }
 
   .nav ul {
     flex-wrap: wrap;
   }
-
-  .hero-section {
-    margin: 2rem 0;
-  }
   .hero-container {
     flex-wrap: wrap-reverse;
+  }
+
+  .card-delivery {
+    margin-top: 3rem;
   }
 }
 
@@ -262,11 +389,12 @@
     gap: 2rem;
   }
   .hero-section .text {
-    align-items: center;
+    text-align: center;
+    width: 100%;
   }
 
   .hero-section .text .description {
-    width: 100%;
     text-align: center;
+    padding-right: 0;
   }
 }
