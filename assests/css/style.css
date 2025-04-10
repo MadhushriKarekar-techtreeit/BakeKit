@@ -64,7 +64,7 @@ body {
 }
 
 .hero-section .text .name,
-.about .text .name {
+.about .name {
   margin-bottom: 1rem;
   color: var(--accent-color);
   font-size: 1.2rem;
@@ -72,7 +72,7 @@ body {
 }
 
 .hero-section .text .title,
-.about .text .title {
+.about .title {
   color: var(--dark-color);
   font-family: var(--font-family);
   font-size: 4.5rem;
@@ -80,7 +80,8 @@ body {
   line-height: 1em;
 }
 
-.hero-section .text .description {
+.hero-section .text .description,
+.about .description {
   color: var(--light-color);
   font-size: 1.25rem;
   line-height: 1.6em;
@@ -105,8 +106,7 @@ body {
   color: var(--main-color);
   border-color: var(--main-color);
 }
-.nav-btn:hover,
-.about-btn:hover {
+.nav-btn:hover {
   background-color: var(--main-color);
   color: var(--white-color);
 }
@@ -233,46 +233,21 @@ body {
   padding: 1.75rem;
   text-align: center;
 }
-/* .about {
+.about {
   background-image: url(/assests/img/gallery-sec-img.jpg);
-  background-position: bottom left;
+  background-position: center left;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 4rem 0;
-} */
-
-.about .text .title {
-  font-size: 2.5rem;
-  font-weight: 700;
 }
-
-.about .text .title-desc {
-  font-size: 1.125rem;
-  color: var(--light-color);
-  margin-bottom: 1rem;
-}
-
-.about .text .description {
-  color: #7a7a7a;
-  font-size: 1rem;
-  padding-right: 1rem;
-}
-
-.about .image img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-/* .menu {
+.menu {
   background-image: url(/assests/img/our-menu-bg.jpg);
   background-position: center left;
   background-repeat: no-repeat;
   background-size: cover;
-} */
-/* .menu-container {
+}
+.menu-container {
   padding: 173px 20px 150px 20px;
-} */
+}
 
 .menu-text {
   text-align: center;
@@ -389,21 +364,14 @@ body {
     width: 100%;
     max-width: 400px;
   }
-  .about .text .title {
-    font-size: 2rem;
-  }
-  .about .text .description {
-    padding-right: 0;
-  }
 }
 @media only screen and (max-width: 992px) {
   .nav-btn {
     display: none;
   }
-  .about-btn {
+  .about-btn{
     display: block;
   }
-
   .nav ul {
     flex-wrap: wrap;
   }
