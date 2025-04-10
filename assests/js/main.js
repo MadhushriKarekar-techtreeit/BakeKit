@@ -6,9 +6,7 @@ const sr = ScrollReveal({
   reset: true,
 });
 
-sr.reveal(".hero-section,.feature-section, .count-section");
+sr.reveal(".hero-section,.feature-section, .count-section,.about-section .text, .about-section .image");
 sr.reveal(".feature-section .card,.count-card", { interval: 200 });
-sr.reveal(".category .card", { interval: 200 })
+sr.reveal(".category .card", { interval: 200 });
 sr.reveal(".menu", { interval: 200 });
-sr.reveal(".about .image", { origin: "left" });
-sr.reveal(".about .text", { origin: "right" });
