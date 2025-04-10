@@ -268,6 +268,10 @@ body {
   padding: 173px 20px 150px 20px;
 }
 
+.menu-text {
+  text-align: center;
+}
+
 .menu .rating {
   margin: 1.25rem 0;
   color: var(--main-color);
@@ -352,15 +356,15 @@ body {
 }
 /* Breakpoints */
 @media screen and (max-width: 576px) {
-  .menu-container {
+  /* .menu-container {
     padding: 0;
-  }
+  } */
   .menu .menu-container .menu-card .card .card-image {
     width: 280px;
     height: 320px;
   }
   .menu .card .card-image img {
-    right: 0; /* or reduce the value */
+    right: 18; /* or reduce the value */
   }
 }
 
@@ -384,7 +388,7 @@ body {
     justify-content: space-evenly;
   }
   .menu .card .card-image img {
-    right: 0;
+    right: 18;
   }
 
   .hero-section .image {
