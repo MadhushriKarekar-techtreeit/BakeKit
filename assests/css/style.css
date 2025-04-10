@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
 }
 :root {
   --font-family: "Elsie", Sans-serif;
@@ -16,6 +16,9 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
 .section {
   margin: 10rem 0;
 }
@@ -277,9 +280,12 @@ html {
   transition: transform 0.4s ease;
   cursor: pointer;
 }
-.menu .card:hover {
-  transform: scale(1.1);
+.menu-card {
+  overflow: hidden;
 }
+/* .menu .card:hover {
+  transform: scale(1.1);
+} */
 
 .menu .card-image {
   width: 320px;
@@ -353,6 +359,9 @@ html {
     width: 280px;
     height: 320px;
   }
+  .menu .card .card-image img {
+    right: 0; /* or reduce the value */
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -373,6 +382,14 @@ html {
   .menu .menu-card div {
     display: flex;
     justify-content: space-evenly;
+  }
+  .menu .card .card-image img {
+    right: 0;
+  }
+
+  .hero-section .image {
+    width: 100%;
+    max-width: 400px;
   }
 }
 @media only screen and (max-width: 992px) {
