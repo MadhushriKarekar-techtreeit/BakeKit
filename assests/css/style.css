@@ -233,13 +233,13 @@ body {
   padding: 1.75rem;
   text-align: center;
 }
-.about {
+/* .about {
   background-image: url(/assests/img/gallery-sec-img.jpg);
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 4rem 0;
-}
+} */
 
 .about .text .title {
   font-size: 2.5rem;
@@ -264,24 +264,15 @@ body {
   object-fit: cover;
 }
 
-@media (max-width: 768px) {
-  .about .text .title {
-    font-size: 2rem;
-  }
-  .about .text .description {
-    padding-right: 0;
-  }
-}
-
-.menu {
+/* .menu {
   background-image: url(/assests/img/our-menu-bg.jpg);
   background-position: center left;
   background-repeat: no-repeat;
   background-size: cover;
-}
-.menu-container {
+} */
+/* .menu-container {
   padding: 173px 20px 150px 20px;
-}
+} */
 
 .menu-text {
   text-align: center;
@@ -370,15 +361,6 @@ body {
   background-color: #ffded6;
 }
 /* Breakpoints */
-/* @media screen and (max-width: 576px) {
-  .menu .menu-container .menu-card .card .card-image {
-    width: 280px;
-    height: 320px;
-  }
-  .menu .card .card-image img {
-    right: 18;
-  }
-} */
 
 @media only screen and (max-width: 768px) {
   .hero-section {
@@ -406,6 +388,12 @@ body {
   .hero-section .image {
     width: 100%;
     max-width: 400px;
+  }
+  .about .text .title {
+    font-size: 2rem;
+  }
+  .about .text .description {
+    padding-right: 0;
   }
 }
 @media only screen and (max-width: 992px) {
