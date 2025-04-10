@@ -370,18 +370,15 @@ body {
   background-color: #ffded6;
 }
 /* Breakpoints */
-@media screen and (max-width: 576px) {
-  /* .menu-container {
-    padding: 0;
-  } */
+/* @media screen and (max-width: 576px) {
   .menu .menu-container .menu-card .card .card-image {
     width: 280px;
     height: 320px;
   }
   .menu .card .card-image img {
-    right: 18; /* or reduce the value */
+    right: 18;
   }
-}
+} */
 
 @media only screen and (max-width: 768px) {
   .hero-section {
@@ -395,8 +392,8 @@ body {
     width: 80%;
   }
   .menu .menu-container .menu-card .card-image {
-    width: 400px;
-    height: 420px;
+    width: 370px;
+    height: 400px;
   }
   .menu .menu-card div {
     display: flex;
