@@ -64,7 +64,7 @@ body {
 }
 
 .hero-section .text .name,
-.about .name {
+.about-section .name {
   margin-bottom: 1rem;
   color: var(--accent-color);
   font-size: 1.2rem;
@@ -72,7 +72,7 @@ body {
 }
 
 .hero-section .text .title,
-.about .title {
+.about-section .title {
   color: var(--dark-color);
   font-family: var(--font-family);
   font-size: 4.5rem;
@@ -81,7 +81,7 @@ body {
 }
 
 .hero-section .text .description,
-.about .description {
+.about-section .description {
   color: var(--light-color);
   font-size: 1.25rem;
   line-height: 1.6em;
@@ -233,7 +233,7 @@ body {
   padding: 1.75rem;
   text-align: center;
 }
-.about {
+.about-section {
   background-image: url(/assests/img/gallery-sec-img.jpg);
   background-position: center left;
   background-repeat: no-repeat;
@@ -364,12 +364,15 @@ body {
     width: 100%;
     max-width: 400px;
   }
+  .about-content {
+    flex-wrap: wrap;
+  }
 }
 @media only screen and (max-width: 992px) {
   .nav-btn {
     display: none;
   }
-  .about-btn{
+  .about-btn {
     display: block;
   }
   .nav ul {
@@ -381,6 +384,9 @@ body {
 
   .card-delivery {
     margin-top: 3rem;
+  }
+  .about-content {
+    flex-wrap: wrap;
   }
   .menu .menu-card .card-image {
     width: 330px;
