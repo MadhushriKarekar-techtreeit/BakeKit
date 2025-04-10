@@ -281,7 +281,7 @@ html {
   transform: scale(1.1);
 }
 
-.menu .card .card-image {
+.menu .card-image {
   width: 320px;
   height: 355px;
   position: relative;
@@ -345,7 +345,14 @@ html {
   background-color: #ffded6;
 }
 /* Breakpoints */
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 576px) {
+  .menu-container {
+    padding: 0;
+  }
+  .menu .menu-container .menu-card .card .card-image {
+    width: 280px;
+    height: 320px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -358,6 +365,14 @@ html {
 
   .card {
     width: 80%;
+  }
+  .menu .menu-container .menu-card .card-image {
+    width: 400px;
+    height: 420px;
+  }
+  .menu .menu-card div {
+    display: flex;
+    justify-content: space-evenly;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -378,6 +393,10 @@ html {
   .card-delivery {
     margin-top: 3rem;
   }
+  .menu .menu-card .card-image {
+    width: 330px;
+    height: 360px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -396,5 +415,9 @@ html {
   .hero-section .text .description {
     text-align: center;
     padding-right: 0;
+  }
+  .menu-card .card-image {
+    width: 232px;
+    height: 273px;
   }
 }
